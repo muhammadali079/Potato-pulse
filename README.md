@@ -17,7 +17,7 @@ The dataset consists of high-quality images of potato leaves, categorized into t
 
 By clearly defining the problem, emphasizing the project's significance, and outlining a meticulous approach to data preparation, "Potato Pulses" is positioned as a crucial innovation in combating potato blight diseases through the application of AI.
 
-Setup for Python:
+### **Setup for Python:**
 
 Install Python 
 
