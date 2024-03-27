@@ -19,7 +19,7 @@ By clearly defining the problem, emphasizing the project's significance, and out
 
 ### **Setup for Python:**
 
-Install Python 
+Install Python [Setup Guide](https://wiki.python.org/moin/BeginnersGuide)
 
 Install Python packages
 
