@@ -16,3 +16,14 @@ The dataset consists of high-quality images of potato leaves, categorized into t
 **Splitting:** Division of the dataset into training, validation, and test sets. This separation is critical for training the model, tuning its parameters, and evaluating its performance accurately.
 
 By clearly defining the problem, emphasizing the project's significance, and outlining a meticulous approach to data preparation, "Potato Pulses" is positioned as a crucial innovation in combating potato blight diseases through the application of AI.
+
+Setup for Python:
+
+Install Python 
+
+Install Python packages
+
+pip3 install -r training/requirements.txt
+pip3 install -r api/requirements.txt
+
+Install Tensorflow Servi
