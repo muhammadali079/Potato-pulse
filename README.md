@@ -17,19 +17,36 @@ The dataset consists of high-quality images of potato leaves, categorized into t
 
 By clearly defining the problem, emphasizing the project's significance, and outlining a meticulous approach to data preparation, "Potato Pulses" is positioned as a crucial innovation in combating potato blight diseases through the application of AI.
 
-### **Setup for Python:**
+### ***Setup for Python:***
 
-Install Python [Setup Guide](https://wiki.python.org/moin/BeginnersGuide)
+1. Install Python [Setup Guide](https://wiki.python.org/moin/BeginnersGuide)
 
-Install Python packages
+2. Install Python packages
 
-To install dependencies for training, run:
+3. To install dependencies for training, run:
 
 ```
 pip3 install -r training/requirements.txt
 ```
-To install dependencies for the API, run:
+4. To install dependencies for the API, run:
 ```
 pip3 install -r api/requirements.txt
 ```
-Install Tensorflow Servi
+5. Install Tensorflow Service [Setup Guide](https://www.tensorflow.org/tfx/serving/setup)
+
+
+### ***Setup for ReactJS:***
+
+1. Install Nodejs [Setup Guide](https://nodejs.org/en/download/package-manager/)
+   
+2. Install NPM [Setup Guide](https://docs.npmjs.com/getting-started)
+
+3. Install dependencies
+```
+cd frontend
+npm install --from-lock-json
+npm audit fix
+```
+4. Copy `.env.example` as `.env.`
+
+5. Change API url in `.env.`
