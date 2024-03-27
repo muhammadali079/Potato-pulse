@@ -23,7 +23,13 @@ Install Python
 
 Install Python packages
 
-pip3 install -r training/requirements.txt
-pip3 install -r api/requirements.txt
+To install dependencies for training, run:
 
+```
+pip3 install -r training/requirements.txt
+```
+To install dependencies for the API, run:
+```
+pip3 install -r api/requirements.txt
+```
 Install Tensorflow Servi
