@@ -1,3 +1,5 @@
+Github Link : https://github.com/muhammadali079/Potato-pulse
+
 This code is a script for training convolutional neural network (CNN) models on a dataset using TensorFlow/Keras. Here's a brief overview of what the code does:
 
 1. Dataset Loading:
