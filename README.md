@@ -56,3 +56,43 @@ npm audit fix
 1. Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.
 
 2. Install dependencies
+   ```
+   cd mobile-app
+   yarn install
+   ```
+3. Copy `.env.example` as `.env`.
+
+4. Change API url in `.env`.
+
+***Training the Model:***
+1. Download the data from [kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village).
+2. Only keep folders related to Potatoes.
+3. Run Jupyter Notebook in Browser.
+`jupyter notebook`
+4. Open `training/potato-disease-training.ipynb` in Jupyter Notebook.
+5. In cell #2, update the path to dataset.
+6. Run all the Cells one by one.
+7. Copy the model generated and save it with the version number in the `models` folder.
+
+***Running the API:***
+*Using FastAPI*
+1. Get inside `api` folder
+```
+cd api
+```
+2. Run the FastAPI Server using uvicorn
+ ```
+uvicorn main:app --reload --host 0.0.0.0
+```
+4. Your API is now running at `0.0.0.0:8000`
+
+
+***Creating the TF Lite Model***
+1. Run Jupyter Notebook in Browser.
+```
+jupyter notebook
+```
+2. Open `training/tf-lite-converter.ipynb` in Jupyter Notebook.
+3. In cell #2, update the path to dataset.
+4. Run all the Cells one by one.
+5. Model would be saved in `tf-lite-models` folder.
