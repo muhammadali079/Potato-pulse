@@ -52,7 +52,7 @@ npm audit fix
 5. Change API url in `.env.`
 
 
-***Setup for React-Native app:***
+### ***Setup for React-Native app:***
 1. Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.
 
 2. Install dependencies
@@ -64,7 +64,7 @@ npm audit fix
 
 4. Change API url in `.env`.
 
-***Training the Model:***
+### ***Training the Model:***
 1. Download the data from [kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village).
 2. Only keep folders related to Potatoes.
 3. Run Jupyter Notebook in Browser.
@@ -74,8 +74,8 @@ npm audit fix
 6. Run all the Cells one by one.
 7. Copy the model generated and save it with the version number in the `models` folder.
 
-***Running the API:***
-*Using FastAPI*
+### ***Running the API:***
+**Using FastAPI**
 1. Get inside `api` folder
 ```
 cd api
@@ -87,7 +87,7 @@ uvicorn main:app --reload --host 0.0.0.0
 4. Your API is now running at `0.0.0.0:8000`
 
 
-***Creating the TF Lite Model***
+### ***Creating the TF Lite Model:***
 1. Run Jupyter Notebook in Browser.
 ```
 jupyter notebook
