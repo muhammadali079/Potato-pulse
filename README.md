@@ -50,3 +50,9 @@ npm audit fix
 4. Copy `.env.example` as `.env.`
 
 5. Change API url in `.env.`
+
+
+***Setup for React-Native app:***
+1. Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.
+
+2. Install dependencies
