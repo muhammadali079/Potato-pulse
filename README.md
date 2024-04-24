@@ -97,3 +97,8 @@ jupyter notebook
 3. In cell #2, update the path to dataset.
 4. Run all the Cells one by one.
 5. Model would be saved in `tf-lite-models` folder.
+
+
+### ***Mobile-Application ScreenShot***
+
+![Potato-pulse](C:\Users\Azhar\Downloads\WhatsApp Image 2024-04-24 at 7.59.42 PM.jpeg)
