@@ -101,4 +101,4 @@ jupyter notebook
 
 ### ***Mobile-Application ScreenShot***
 
-![Potato-pulse](C:\Users\Azhar\Downloads\WhatsApp Image 2024-04-24 at 7.59.42 PM.jpeg)
+![Potato-pulse](potato-pulse-mob-app-s.s.jpeg)
