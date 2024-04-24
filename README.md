@@ -5,6 +5,7 @@ The importance of this project stems from its potential to transform the traditi
 
 ### **Dataset**
 The dataset consists of high-quality images of potato leaves, categorized into three groups: healthy, early blight, and late blight. Each image is labeled according to its disease state, serving as the foundation for training and evaluating the AI model.
+for more info goto [Dataset-info](Data Training/Documentation.txt)
 
 ### **Preprocessing Steps**
 **Image Cleaning:** Removal of irrelevant content from images, such as background noise and unrelated objects, to focus on the leaf itself.
