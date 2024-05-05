@@ -103,3 +103,6 @@ jupyter notebook
 ### ***Mobile-Application ScreenShot***
 
 ![Potato-pulse](potato-pulse-mob-app-s.s.jpeg)
+
+
+![Potato-pulse](Screenshot (221).png)
