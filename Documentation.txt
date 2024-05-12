@@ -1,0 +1,103 @@
+--------------------------------------------------------------POTATO_PULSE-------------------------------------------------------------------------------------
+
+Github Link : https://github.com/muhammadali079/Potato-pulse
+
+This code is a script for training convolutional neural network (CNN) models on a dataset using TensorFlow/Keras. Here's a brief overview of what 
+the code does:
+
+1. Dataset Loading:
+   - Loads an image dataset from a directory, specifying image size, batch size, and shuffle preferences.
+   - Extracts the class names found within the loaded dataset.
+   - Partitions the dataset into training, validation, and test sets according to specified proportions.
+
+2. Setup and Data Preprocessing:
+   - Shuffles the dataset before partitioning.
+   - The script begins by defining a list of learning rates to experiment with.
+   - It defines data preprocessing steps such as resizing, rescaling, and data augmentation using TensorFlow Sequential API.
+   - The dataset is partitioned into training (`train_ds`), validation (`val_ds`), and test (`test_ds`) sets. These datasets are cached, 
+     shuffled, and prefetched for efficient processing.
+
+3. Model Architecture:
+   - The CNN model architecture is defined using TensorFlow Sequential API. It consists of convolutional layers followed by max-pooling layers, 
+     flattening, and dense layers.
+   - The model is built with an input shape defined by batch size, image size, and number of channels.
+
+4. Training Function:
+   - A function `train_model_with_lr()` is defined to train the model with different learning rates.
+   - Inside this function, the model is compiled with Adam optimizer, sparse categorical cross-entropy loss function, and accuracy metric.
+   - The model is trained using the `fit()` function with training data (`train_ds`) and validated on validation data (`val_ds`) for a specified 
+     number of epochs.
+
+5. Training Loop:
+   - The script iterates over each learning rate in the `learning_rates` list.
+   - For each learning rate, a new model is trained using `train_model_with_lr()` function.
+   - Training history (loss and accuracy) is saved to a text file, and the trained model is saved to disk using TensorFlow's SavedModel format 
+     and Keras's .keras format.
+   - Model performance metrics (loss and accuracy) for both training and validation sets are stored.
+
+6. Results:
+   - Model results (loss and accuracy) and model objects are displayed, collected and stored for further analysis or comparison.
+
+7. Testing:
+   - The predict() function takes a trained model and an image as input. It utilizes the model to predict the class probabilities for the 
+     given image.
+   - By selecting the class with the highest probability, it identifies the predicted class and calculates the confidence level for that 
+     prediction.
+   - The high accuracy achieved on the test dataset indicates that the model has successfully learned patterns and features from the training 
+     data, enabling it to generalize well to unseen examples.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#) Project Description and Workflow :-
+
+Our project aims to develop a deep learning model for the classification of plant diseases based on images of plant leaves. The final 
+submission includes this comprehensive report that covers various aspects of the project.
+
+
+====> Dataset Description and Preprocessing :-
+
+The dataset used in this project was sourced from Kaggle.com, a popular platform for hosting datasets and machine learning competitions. The 
+dataset consists of images of plant leaves affected by various diseases, along with corresponding labels indicating the disease type. The 
+dataset size is approximately 8000+ Images.
+
+*)Preprocessing steps applied to the dataset include:
+   - Resizing images to a uniform size suitable for model input.
+   - Normalizing pixel values to a range between 0 and 1.
+   - Augmenting the dataset through techniques such as rotation, flipping, and zooming to increase dataset diversity and improve model 
+     generalization.
+
+
+====> External Help and References :-
+
+*)Proper citation of external help or references is essential to acknowledge the contributions of others and to maintain academic integrity. 
+Some examples of external references that may be cited include:
+
+   - Datasets: Kaggle.com 
+   - Algorithms: TensorFlow, Keras
+   - Libraries: NumPy, Pandas, Matplotlib
+
+
+====> Addressing Challenges :-
+
+Throughout the project execution, several challenges arised, such as:
+
+   - Poor performance of the trained model on new data.
+   - Overfitting or underfitting of the model.
+
+To address such challenges, various strategies can be employed, including:
+
+   - Increasing and diversifying the dataset to improve model robustness and generalization.
+   - Fine-tuning hyperparameters such as learning rate, batch size, and model architecture.
+   - Applying regularization techniques such as dropout and weight decay to prevent overfitting.
+   - Experimenting with different optimization algorithms and loss functions to improve model convergence.
+
+====> Summary :-
+
+In summary, this report provides a comprehensive overview of the project, including dataset description, methodology, results, and challenges 
+encountered during project execution. Proper citation of external references and transparent discussion of methodologies and approaches 
+ensure the credibility and reproducibility of the project outcomes.
+
+Overall, this code allows for experimenting with different learning rates to train CNN models on a dataset, facilitating model evaluation and 
+comparison based on performance metrics. The model has been trained with high accuracy, meaning it's really good at making predictions based 
+on the data it learned from. Now, it's all set to be used for real-world tasks. The model is ready to deliver reliable results.
