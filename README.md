@@ -104,4 +104,4 @@ jupyter notebook
 
 ![Potato-pulse](potato-pulse-mob-app-s.s.jpeg)
 
-![Potatopulse](Screenshot (235).png)
+![Potato-pulse2](Webapp.png)
