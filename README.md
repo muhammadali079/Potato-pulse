@@ -106,3 +106,6 @@ jupyter notebook
 
 ### *WEB Page*
 ![Potato-pulse2](Webapp.png)
+
+### ***Result***
+![Potato-pulse2](Webpage2.png)
