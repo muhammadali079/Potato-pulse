@@ -1,4 +1,4 @@
-# POTATO DISEASE DETECTION
+7# POTATO DISEASE DETECTION
 In the agricultural sector, potato crops play a crucial role in global food security and economy. However, potato blight, encompassing both early and late blight diseases, poses a significant threat to potato yield and quality. Early detection and accurate classification of these diseases are paramount in mitigating losses and implementing effective management strategies. "Potato Pulses" aims to address this challenge by leveraging artificial intelligence to analyze potato leaf images, thereby enabling the identification of healthy leaves and the differentiation between early and late blight diseases. This project not only contributes to safeguarding potato crops but also supports farmers in taking timely actions to protect their yield.
 
 ### **Importance of the Project**
@@ -103,4 +103,5 @@ jupyter notebook
 ### ***Mobile-Application ScreenShot***
 
 ![Potato-pulse](potato-pulse-mob-app-s.s.jpeg)
-![Potato-pulse](Screenshot(235).png)
+
+![Potatopulse](Screenshot(235).png)
