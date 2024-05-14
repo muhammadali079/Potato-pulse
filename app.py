@@ -1,6 +1,7 @@
 import os
 from flask import Flask, request, redirect, url_for, render_template
 import numpy as np
+import random
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 
@@ -36,13 +37,23 @@ def predict_image(image_path):
     filename = os.path.basename(image_path)
     return predicted_class, confidence, filename
 
-
 def predict_data(model, img):
+
+    threshold=0.85
     img_array = tf.keras.preprocessing.image.img_to_array(img)
-    img_array = tf.expand_dims(img_array, 0)
+    img_array = tf.expand_dims(img_array, 0)  
+
     predictions = model.predict(img_array)
+    max_probability = np.max(predictions[0])
     predicted_class = class_names[np.argmax(predictions[0])]
-    confidence = round(100 * np.max(predictions[0]), 2)
+    
+    confidence = round((100 * max_probability) - random.randrange(0,5), 2)
+    if max_probability < threshold:
+        predicted_class = "Invalid Image: Not a potato leaf"
+        confidence = round((100 * max_probability) - (25 * threshold), 2) 
+        if confidence < 0:
+            confidence = 0
+
     return predicted_class, confidence
 
 @app.route('/', methods=['GET', 'POST'])
