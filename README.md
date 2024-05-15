@@ -38,22 +38,18 @@ pip3 install -r api/requirements.txt
 
 
 ### ***Setup for Vanilla JavaScript with Flask Backend:*** 
-1. Install Node.js:
 
-You can skip this step since you won't be using Node.js for the frontend anymore.
 
-2. Install NPM:
-
-3. Install Dependencies:
+1. Install Dependencies:
 
 -Make sure you have Python and pip installed for Flask.
 -To install Flask and other dependencies for your Flask backend, you can use pip:
 ```
 pip install flask
 ```
-4. Copy `.env.example` as `.env`:
+2. Copy `.env.example` as `.env`:
 
-5. Change API URL in `.env`:
+3. Change API URL in `.env`:
 
 ### ***Setup for Flutter app:***
 1. Install Flutter SDK:
@@ -88,17 +84,6 @@ pip install flask
 6. Run all the Cells one by one.
 7. Copy the model generated and save it with the version number in the `models` folder.
 
-### ***Running the API:***
-**Using FastAPI**
-1. Get inside `api` folder
-```
-cd api
-```
-2. Run the FastAPI Server using uvicorn
- ```
-uvicorn main:app --reload --host 0.0.0.0
-```
-4. Your API is now running at `0.0.0.0:8000`
 
 
 ### ***Creating the TF Lite Model:***
