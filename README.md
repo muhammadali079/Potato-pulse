@@ -88,7 +88,7 @@ pip install flask
 
 
 
-### ***Creating the TF Lite Model:***
+### ***Creating the TF Model:***
 1. Run Jupyter Notebook in Browser.
 ```
 jupyter notebook
