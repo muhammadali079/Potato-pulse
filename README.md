@@ -37,34 +37,46 @@ pip3 install -r api/requirements.txt
 5. Install Tensorflow Service [Setup Guide](https://www.tensorflow.org/tfx/serving/setup)
 
 
-### ***Setup for ReactJS:***
+### ***Setup for Vanilla JavaScript with Flask Backend:*** 
+1. Install Node.js:
 
-1. Install Nodejs [Setup Guide](https://nodejs.org/en/download/package-manager/)
+You can skip this step since you won't be using Node.js for the frontend anymore.
+
+2. Install NPM:
+
+3. Install Dependencies:
+
+-Make sure you have Python and pip installed for Flask.
+-To install Flask and other dependencies for your Flask backend, you can use pip:
+```
+pip install flask
+```
+4. Copy `.env.example` as `.env`:
+
+5. Change API URL in `.env`:
+
+### ***Setup for Flutter app:***
+1. Install Flutter SDK:
+
+2. Install Flutter dependencies
+  - Once Flutter is installed, ensure that you have all necessary dependencies for Flutter development by running:
+   ```
+   flutter doctor
+   ```
+  - Install any missing dependencies according to the instructions provided by `flutter doctor`.
+3. Clone the repository:
    
-2. Install NPM [Setup Guide](https://docs.npmjs.com/getting-started)
-
-3. Install dependencies
-```
-cd frontend
-npm install --from-lock-json
-npm audit fix
-```
-4. Copy `.env.example` as `.env.`
-
-5. Change API url in `.env.`
-
-
-### ***Setup for React-Native app:***
-1. Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.
-
-2. Install dependencies
+4. Navigate to the project directory:
    ```
    cd mobile-app
-   yarn install
    ```
-3. Copy `.env.example` as `.env`.
+5. Install dependencies:
+   ```
+   flutter pub get
+   ```
+6. Copy `.env.example` as `.env`.
 
-4. Change API url in `.env`.
+7. Change API url in `.env`.
 
 ### ***Training the Model:***
 1. Download the data from [kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village).
