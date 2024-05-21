@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <img src="{{ url_for('static', filename= filename) }}" alt="Uploaded Image" style="max-width: 100%; max-height: 400px;">
+    <h2>Predicted Class: {{ predicted_class }}</h2>
+    <h2>Confidence: {{ confidence }}%</h2>
+    <h2>Actual Class: {{ actual_class }}</h2>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>

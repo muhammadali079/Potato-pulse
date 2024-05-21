@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #478ac9; /* Blue background color for header */
+    padding: 20px;
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #007bff; /* Blue background color for GitHub link */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
