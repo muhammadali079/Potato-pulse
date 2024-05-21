@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Pulse - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .file-input {
+            margin-bottom: 20px;
+        }
+        #selected-image {
+            display: none;
+            max-width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .upload-button, .github-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .upload-button:hover, .github-button:hover {
+            background-color: #0056b3;
+        }
+        .upload-button {
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+        .space {
+            display: block;
+            margin-top: 20px; /* Add margin top */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Potato Pulse - Home</h1>
+            <div class="file-input">
+                <input type="file" name="file" id="fileInput" accept="image/*" onchange="displaySelectedImage(event)" style="display: none;">
+                <label for="fileInput" class="upload-button">Select Image</label>
+            </div>
+            <img id="selected-image" src="#" alt="Selected Image">
+            <div id="predictionResult"></div>
+            <button type="submit" class="upload-button" onclick="predictClass()">Upload</button>
+        <a href="https://github.com/muhammadali079/Potato-pulse" class="github-button space" target="_blank">GitHub</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
